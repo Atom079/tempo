@@ -1,89 +1,146 @@
 /* Default styles */
 @font-face {
-    font-family: "Monserat";
-    src: url("../font/Montserrat-Regular.ttf");
+  font-family: "Monserat";
+  src: url("../font/Montserrat-Regular.ttf");
 }
-:root{
-    --header-color: #444444;
-    --color2: #C4344F;
-    --font: 'Monserat', sans-serif;
+:root {
+  --header-color: #444444;
+  --color2: #c4344f;
+  --font: "Monserat", sans-serif;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--font);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
 }
-body{
-    line-height: 1.4;
+body {
+  line-height: 1.4;
 }
+img{
+    width: 100%;
+}
+
+/* Section public styles */
+.section-top_text .first{
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-size: .8rem;
+    padding: .3rem 1.2rem;
+    margin: 6px;
+    background-color: #FDEFF2;
+    display: inline-block;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    color: var(--color2);
+}
+.section-top_text .main-title{
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.section-top_text .main-title span{
+    color: var(--color2);
+}
+/* //Section public styles */
+
+
 /* Header styles */
-.header{
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0,0,0,.6)), url("../img/hero-bg.jpg") center/cover no-repeat;
-    min-height: 100vh;
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+    url("../img/hero-bg.jpg") center/cover no-repeat;
+  min-height: 100vh;
 }
 /* //Header styles */
 /* Navbar styles */
-.navbar-nav .nav-link{
-    color: #fff;
-    margin-left: 0.5rem;
-    font-size: 1.1rem;
-    font-weight: bolder;
-    position: relative;
-    transition: all .4s ease;
+.navbar-nav .nav-link {
+  color: #fff;
+  margin-left: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  position: relative;
+  transition: all 0.4s ease;
 }
-.nav-link:hover{
-    color: #fff !important;
+.nav-link:hover {
+  color: #fff !important;
 }
-.nav-link:hover::before{
-    width: 100%;
+.nav-link:hover::before {
+  width: 100%;
 }
-.nav-link::before{
-    content: " ";
-    width: 0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 4px;
-    background-color: var(--color2);
-    transition: all .4s ease;
+.nav-link::before {
+  content: " ";
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  background-color: var(--color2);
+  transition: all 0.4s ease;
 }
-.navbar-brand{
-    font-size: 2rem !important;
-    font-weight: 900;
+.navbar-brand {
+  font-size: 2rem !important;
+  font-weight: 900;
+}
+.navbar.active {
+  background-color: #000 !important;
 }
 /* //Navbar styles */
 /* Intro section */
-.intro{
-    padding-top: 9rem !important;
+.intro {
+  padding-top: 10rem !important;
 }
-.top-text{
-    background-color: rgba(255,255,255,0.2);
-    display: inline-block;
-    font-weight: bold;
-    letter-spacing: 2px;
+.top-text {
+  background-color: rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
-.main-heading{
-    font-size: 3rem;
-    letter-spacing: 2px;
-    padding-top: .6rem;
-    padding-bottom: 0.4rem;
+.main-heading {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  padding-top: 0.6rem;
+  padding-bottom: 0.4rem;
 }
-.support-par{
-    font-size: 1.3rem;
-    letter-spacing: 2px;
+.support-par {
+  font-size: 1.3rem;
+  letter-spacing: 2px;
 }
-.btn a{
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: #fff;
-    padding: .5rem 1.2rem;
-    border: 1px solid #fff;
-    border-radius: 2rem;
-    transition: all .2s ease-in;
+.intro .btn a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 0.5rem 1.2rem;
+  border: 1px solid #fff;
+  border-radius: 2rem;
+  transition: all 0.2s ease-in;
 }
-.btn a:hover{
-    background-color: var(--color2);
-    border: none;
+.intro .btn a:hover {
+  background-color: var(--color2);
+  border: none;
 }
 /* //Intro section */
+/* About secttion */
+.about .btn a{
+text-decoration: none;
+  font-size: 1.1rem;
+  color: var(--color2);
+  padding: 0.5rem 1.2rem;
+  border: 1px solid var(--color2);
+  border-radius: 2rem;
+  transition: all 0.2s ease-in;
+}
+.about .btn a:hover{
+  color: #fff;
+  background-color: var(--color2);
+  border: none;
+}
+.about ul{
+    list-style: url("../img/60727.png");
+}
+/* //About secttion */
+
+/* Media */
+@media screen and (max-width :1000px) {
+    .navbar{
+        background-color: #212529;
+    }
+}

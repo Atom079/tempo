@@ -22,15 +22,15 @@
     />
   </head>
   <body>
-
     <!-- Header section -->
-    <header class="header">
+    <header class="header  py-3">
       <div class="container">
-
         <!-- Navbar section -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav
+          class="navbar navbar-expand-lg navbar-dark position-fixed top-0 start-0 px-5 w-100"
+        >
           <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html">TEMPO</a>
+            <a class="navbar-brand" href="#">TEMPO</a>
             <button
               class="navbar-toggler"
               type="button"
@@ -93,25 +93,67 @@
 
         <!-- Intro section -->
         <section id="home" class="intro">
-            <div class="content text-center text-light">
-                <p class="top-text fs-3 px-5 py-2 mb-3 rounded">
-                    Welcome to <span>Tempo</span>
-                </p>
-                <h1 class="main-heading fw-bold">
-                    WE'RE CREATIVE AGENCY
-                </h1>
-                <p class="support-par">
-                    We are team of talented designers making websites with Bootstrap
-                </p>
-                <button class="btn mt-3">
-                    <a href="#about">Get Started</a>
-                </button>
-            </div>
+          <div class="content text-center text-light">
+            <p class="top-text fs-3 px-5 py-2 mb-3 rounded">
+              Welcome to <span>Tempo</span>
+            </p>
+            <h1 class="main-heading fw-bold">WE'RE CREATIVE AGENCY</h1>
+            <p class="support-par">
+              We are team of talented designers making websites with Bootstrap
+            </p>
+            <button class="btn mt-3">
+              <a href="#about">Get Started</a>
+            </button>
+          </div>
         </section>
         <!-- //Intro section -->
       </div>
     </header>
     <!-- //Header section -->
+
+    <!-- About section -->
+    <section class="about px-4 py-5 my-5" id="about">
+      <div class="container">
+        <div class="section-top_text mb-4 text-center">
+          <p class="first">About</p>
+          <h2 class="main-title py-2">Learn More <span>About Us</span></h2>
+          <p class="text fw-bold w-50 mx-auto">
+            Ut possimus qui ut temporibus culpa velit eveniet modi omnis est
+            adipisci expedita at voluptas atque vitae autem.
+          </p>
+        </div>
+        <div class="content">
+          <div class="row">
+            <div class="col-md-6 column_at">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <ul class="list-styled">
+                <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+                <li>
+                  Duis aute irure dolor in reprehenderit in voluptate velit
+                </li>
+                <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+              </ul>
+            </div>
+            <div class="col-md-6 column_at">
+              <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </p>
+              <button class="btn">
+                <a href="#">Learn More</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //About section -->
 
     <!-- Javascript links -->
     <script src="./assets/js/var.js"></script>
