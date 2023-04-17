@@ -11,7 +11,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
   font-family: var(--font);
 }
 body {
@@ -52,6 +52,9 @@ img{
 }
 /* //Header styles */
 /* Navbar styles */
+.navbar{
+  z-index: 999;
+}
 .navbar-nav .nav-link {
   color: #fff;
   margin-left: 0.5rem;
@@ -137,6 +140,60 @@ text-decoration: none;
     list-style: url("../img/60727.png");
 }
 /* //About secttion */
+
+/* Servicses section */
+.services{
+  padding-top: 5rem !important;
+}
+.column_ss{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .4s ease-in;
+    position: relative;
+}
+.column_ss::after{
+  content: " ";
+  height: 0;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color2);
+  transition: all .3s ease-out;
+  border-radius: 1.2rem;
+}
+.column_ss:hover::after{
+  height: 100%;
+}
+.column_ss:hover .icon i,
+.column_ss:hover .text{
+  color: #fff !important;
+}
+.icon i{
+  color: crimson;
+}
+.column_ss .icon,
+.column_ss .icon i,
+.column_ss .text{
+  z-index: 3;
+}
+.img_ss{
+  width: 50px !important;
+  height: 50px !important;
+  object-fit: cover !important; 
+}
+.column_ss2 .text{
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+}
+.column_ss2:hover .text{
+  color: crimson;
+}
+/* //Servicses section */
 
 /* Media */
 @media screen and (max-width :1000px) {
