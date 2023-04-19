@@ -317,9 +317,32 @@ text-decoration: none;
 }
 .column_po2 .active_btn a:hover {
   opacity: .8;
-  
 }
 /* //Portfolio section */
+/* Team section */
+.column_tm .design-img{
+  position: relative;
+  cursor: pointer;
+}
+.column_tm .design-img .icons{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: #ffffffb4;
+  opacity: 0;
+  transition: all .4s ease-in-out;
+}
+.column_tm .design-img:hover .icons{
+  opacity: 1;
+}
+.column_tm .design-img .icons i{
+  font-size: 1.2rem;
+}
+.column_tm .pro{
+  font-size: .8rem;
+  color: #AAA;
+}
+/* //Team section */
 
 /* Media */
 @media screen and (max-width :1000px) {
