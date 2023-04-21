@@ -56,7 +56,7 @@ section {
 /* Navbar styles */
 .navbar {
   z-index: 999;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 .navbar-nav .nav-link {
   color: #fff;
@@ -345,25 +345,25 @@ section {
 }
 /* //Team section */
 /* Contact section */
-.column_ct .icon i{
+.column_ct .icon i {
   color: var(--color2);
-  background-color: #FDEFF2;
+  background-color: #fdeff2;
   border-radius: 50%;
-  padding: .8rem .9rem;
-  transition: all .3s ease-in-out;
+  padding: 0.8rem 0.9rem;
+  transition: all 0.3s ease-in-out;
 }
-.row_ct{
+.row_ct {
   cursor: pointer;
 }
-.column_ct .row_ct:hover .icon i{
+.column_ct .row_ct:hover .icon i {
   background-color: var(--color2);
   color: #fff;
 }
-.column_ct .title{
+.column_ct .title {
   font-weight: bold;
 }
-.column_ct .addition{
-  color: #A06A84;
+.column_ct .addition {
+  color: #a06a84;
 }
 .column_ct .btn a {
   background-color: var(--color2);
@@ -378,7 +378,73 @@ section {
   opacity: 0.8;
 }
 /* //Contact section */
-
+/* Footer */
+.footer p {
+  color: #a06a84;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+.footer p b {
+  color: #222;
+}
+.footer ul li a {
+  color: #a06a84;
+  text-decoration: none;
+}
+.footer h5 {
+  color: var(--color2);
+}
+.row_foo{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.row_foo .text{
+  line-height: .9;
+  color: #a06a84;
+  font-size: .9rem;
+}
+.row_foo .text b{
+  color: #222;
+}
+.row_foo .icon i{
+  color: #fff;
+  background-color: var(--color2);
+  padding: .6rem .8rem;
+  border-radius: 50%;
+  opacity: .9;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+.row_foo .icon i:hover{
+  opacity: 1;
+}
+/* //Footer */
+/* Home btn */
+.home-btn{
+ 
+  background-color: var(--color2);
+  padding: 0.6rem 1rem;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  transition: all .3s ease;
+  cursor: pointer;
+  transform: translateX(200%);
+}
+.home-btn a{
+  text-decoration: none;
+  color: #fff;
+}
+.home-btn.active{
+  transform: translateX(0%);
+}
+.home-btn:hover{
+  opacity: .9;
+}
+/* //Home btn */
 /* Media */
 @media screen and (max-width: 1000px) {
   .navbar {
